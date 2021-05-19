@@ -84,9 +84,6 @@ resources:
       Type: AWS::CloudFront::Distribution
       Properties:
         DistributionConfig:
-          Aliases:
-            - real.app
-            - www.real.app
           ViewerCertificate:
             AcmCertificateArn: arn:aws:acm:us-east-1:128661475706:certificate/7226b47a-6f3c-4300-908f-afd83da2aaaa
             SslSupportMethod: sni-only
